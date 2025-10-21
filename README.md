@@ -1,0 +1,1 @@
+# Patas para o Lar ONG dedicada ao resgate, cuidado e adoção responsável de animais abandonados. Missão: dar um lar digno para cada pata perdida. Dados: Patas para o Lar CNPJ: 12.345.678/0001-90 Endereço: Rua da Esperança, 123 – São Paulo, SP E-mail: contato@patasparalar.org.br .
