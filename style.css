@@ -1,0 +1,181 @@
+body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f0f8ff; /* Azul claro suave para fundo moderno */
+color: #333;
+animation: fadeIn 1s ease-in-out; /* Animação de fade-in no carregamento */
+}
+
+header {
+background: linear-gradient(to right, #ff8c00, #ff4500); /* Gradiente laranja vibrante */
+padding: 30px;
+text-align: center;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+}
+
+.logo {
+width: 180px; /* Aumentei um pouco para destaque */
+height: auto;
+transition: transform 0.3s; /* Animação suave */
+}
+
+.logo:hover {
+transform: rotate(5deg); /* Rotação leve no hover para interatividade */
+}
+
+.gif-animado {
+width: 350px;
+height: auto;
+margin: 20px 0;
+border-radius: 15px; /* Bordas arredondadas */
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+background: linear-gradient(to right, #007bff, #00bfff); /* Gradiente azul para nav */
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+margin: 0 20px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+font-weight: 600;
+padding: 12px 20px;
+transition: all 0.3s ease; /* Transição suave */
+border-radius: 8px;
+}
+
+nav ul li a:hover {
+background-color: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente no hover */
+transform: translateY(-3px); /* Elevação leve */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+padding: 30px;
+max-width: 1200px;
+margin: 0 auto;
+background-color: white;
+border-radius: 15px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Card-like para o conteúdo principal */
+animation: fadeInUp 1s ease-out; /* Animação de entrada de baixo */
+}
+
+h1, h2 {
+color: #ff4500; /* Laranja vibrante para títulos */
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra leve no texto */
+}
+
+button, .btn-doacao {
+background: linear-gradient(to right, #28a745, #32cd32); /* Gradiente verde esmeralda */
+color: white;
+padding: 12px 25px;
+border: none;
+border-radius: 30px; /* Bordas mais arredondadas para moderno */
+cursor: pointer;
+font-size: 18px;
+font-weight: 600;
+transition: all 0.3s ease;
+animation: pulse 1.5s infinite; /* Animação de pulsação sutil */
+}
+
+button:hover, .btn-doacao:hover {
+transform: scale(1.1); /* Aumento no hover */
+box-shadow: 0 0 15px rgba(50, 205, 50, 0.7); /* Glow verde */
+animation: none; /* Para a pulsação no hover */
+}
+
+form label {
+display: block;
+margin: 15px 0;
+font-weight: 600;
+color: #007bff; /* Azul para labels */
+}
+
+form input {
+width: 100%;
+max-width: 450px;
+padding: 10px;
+margin-bottom: 15px;
+border: 2px solid #007bff;
+border-radius: 8px;
+transition: border-color 0.3s;
+}
+
+form input:focus {
+border-color: #ff4500; /* Destaque laranja no foco */
+box-shadow: 0 0 8px rgba(255, 69, 0, 0.3);
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 15px;
+}
+
+.gallery img {
+width: 100%;
+height: auto;
+border-radius: 15px;
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+transition: transform 0.4s ease; /* Transição para zoom */
+}
+
+.gallery img:hover {
+transform: scale(1.05); /* Zoom no hover */
+}
+
+.transparencia, .historias, .depoimentos {
+background: linear-gradient(to bottom, #e9ecef, #ffffff); /* Gradiente sutil */
+padding: 20px;
+border-radius: 15px;
+margin: 25px 0;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s;
+}
+
+.transparencia:hover, .historias:hover, .depoimentos:hover {
+transform: translateY(-5px); /* Elevação no hover */
+}
+
+/* Animações Keyframes */
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+from { opacity: 0; transform: translateY(20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+0% { transform: scale(1); }
+50% { transform: scale(1.05); }
+100% { transform: scale(1); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+nav ul {
+flex-direction: column;
+}
+nav ul li {
+margin: 15px 0;
+}
+.gif-animado {
+width: 100%;
+}
+main {
+padding: 20px;
+}
+}
